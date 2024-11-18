@@ -10,6 +10,7 @@ int main() {
 	
 	cout << "\no primeiro numero eh " << num1;
 	cout << "\no segundo numero eh \"num1 + 20\" = " << num2 << endl;
+	system("PAUSE");
 	
 	return 0;
 }
