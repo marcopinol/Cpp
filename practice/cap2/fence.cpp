@@ -13,8 +13,8 @@ int main() {
 	cin >> foots;
 	cout << '\n';
 	
-	ducks  = 2 * heads - foots / 2;
-	rabbits = heads - ducks;
+	rabbits = foots / 4 - heads / 2;
+	ducks = heads - rabbits;
 	
 	cout << "Coelhos: " << rabbits << '\n';
 	cout << "Patos: " << ducks << endl;

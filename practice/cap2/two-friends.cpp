@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -23,7 +24,10 @@ int main() {
 	f1 /= total;
 	f2 /= total;
 	
-	cout << "O premio de " << money << " vai ser dividido " << money * f1 << " para o amigo 1 e " << money * f2 << " para o amigo 2." << endl;
+	cout << setiosflags(ios::showpoint) << setiosflags(ios::fixed) << setprecision(2);
+	cout << "O premio de " << money << " vai ser dividido R$" << money * f1 << " para o amigo 1 e R$" << money * f2 << " para o amigo 2." << endl;
 	
+	system("PAUSE");
+		
 	return 0;
 }

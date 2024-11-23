@@ -11,5 +11,7 @@ int main() {
 
 	cout << (bis == 1 ? "Bissexto" : "Nao Bissexto") << endl;
 	
+	system("PAUSE");
+	
 	return 0;
 }
