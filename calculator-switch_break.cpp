@@ -2,11 +2,13 @@
 using namespace std;
 
 int main(){
-	float n1, n2;
-	char op;
+	
 	const int TRUE = 1;
 		
 	while(TRUE){
+		float n1, n2;
+		char op;
+		
 		cout << "\nDigite ZERO para sair do programa ou";
 		cout << "\nnumero operador numero: ";
 		cin >> n1 >> op >> n2;

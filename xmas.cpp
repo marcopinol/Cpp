@@ -18,7 +18,7 @@ int main() {
 				cout << '/';
 			for(int j = 1; j < (2 * i + k); j++) cout << se;
 				for(int j = 1; j < (2 * i + k); j++) cout << sd;
-					cout << '\\' << endl;	
+					cout << '\\' << endl;
 		}	
 	}
 	
@@ -38,6 +38,8 @@ int main() {
 		cout << ' ';
 	}
 	cout << "E UM PROSPERO 2025!" << endl;
+	
+	system("PAUSE");
 	
 	return 0;
 }
