@@ -6,6 +6,7 @@ void linha(int n = 20, char ch = '*');
 //void linha(char ch, int n = 20); --> thats ok
 
 int main(){
+	
 	linha();
 	cout << endl;
 	
