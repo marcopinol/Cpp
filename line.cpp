@@ -2,6 +2,8 @@
 using namespace std;
 
 void linha(int n = 20, char ch = '*');
+//void linha(int n = 20, char ch); --> illegal
+//void linha(char ch, int n = 20); --> thats ok
 
 int main(){
 	linha();
