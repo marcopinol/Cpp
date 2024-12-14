@@ -8,7 +8,7 @@ int main(){
 	mover(3, 'O', 'T', 'D');
 	
 	system("PAUSE");
-	
+	 
 	return 0;
 }
 
