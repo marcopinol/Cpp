@@ -37,24 +37,23 @@ int main(){
 		while((t + f) != 0){
 			char c;
 			
-			cout << "\n\n\n\tPress \"T\" to eject a true bullet or \"F\" to eject a false bullet";
+			cout << "\n\n\n\tPress \"T\" to eject a true bullet or \"F\" to eject a false bullet.";
+			cout << "\n\tPress \"I\" to reverse the polarity of the bullet.";
 			
 			c = getch(); 
 			
 			if(c == 73 || c == 105){
 				b = !(b);
-				showInfo(t, f, b);
-				percentages(f, t);
 			}
 			
 			if(c == 84 || c == 116){
 				if(t <= 0){
 					system("cls");
 					
-					if(t == 0 && f == 0){
-						showInfo(t, f, b);
-						break;
-					}	
+					//if(f == 0){
+						//showInfo(t, f, b);
+						//break;
+					//}	
 					
 					if(b == true){
 						invertert(f, t, b);
@@ -64,34 +63,28 @@ int main(){
 					}
 					
 					cout << "\n\n\t\tTrue bullets gone";
-					showInfo(t, f, b);
-					percentages(f, t);
 				}else{
 					system("cls");
 					
-					if(t == 0 && f == 0){
-						showInfo(t, f, b);
-						break;
-					}
+					//if(t == 0 && f == 0){
+						//showInfo(t, f, b);
+						//break;
+					//}
 					
 					if(b == true){
-						invertert(f, t, b);	
-						showInfo(t, f, b);
-						percentages(f, t);		
+						invertert(f, t, b);			
 					}else{
 						t -= 1;
-						showInfo(t, f, b);
-						percentages(f, t);
 					}
 				}
 			}else if(c == 70 || c == 102){
 				if(f <= 0){
 					system("cls");
 					
-					if(t == 0 && f == 0){
-						showInfo(t, f, b);
-						break;
-					}	
+					//if(t == 0){
+						//showInfo(t, f, b);
+						//break;
+					//}	
 					
 					if(b == true){
 						inverterf(t, f, b);
@@ -101,31 +94,25 @@ int main(){
 					}
 					
 					cout << "\n\n\t\tFalse bullets gone";
-					showInfo(t, f, b);
-					percentages(f, t);
 				}else{
 					system("cls");
 					
-					if(t == 0 && f == 0){
-						showInfo(t, f, b);
-						break;
-					}	
+					//if(t == 0 && f == 0){
+						//showInfo(t, f, b);
+						//break;
+					//}	
 					
 					if(b == true){						
 						inverterf(t, f, b);
-						showInfo(t, f, b);
-						percentages(f, t);
 					}else{					
 						f -= 1;
-						showInfo(t, f, b);
-						percentages(f, t);
-					}
+					}					
 				}
 			}else{
 				system("cls");
-				showInfo(t, f, b);
-				percentages(f, t);
 			}
+			showInfo(t, f, b);
+			percentages(f, t);
 		}
 	system("cls");
 	
