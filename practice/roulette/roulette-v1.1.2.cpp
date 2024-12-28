@@ -49,12 +49,7 @@ int main(){
 			if(c == 84 || c == 116){
 				if(t <= 0){
 					system("cls");
-					
-					//if(f == 0){
-						//showInfo(t, f, b);
-						//break;
-					//}	
-					
+
 					if(b == true){
 						invertert(f, t, b);
 						showInfo(t, f, b);
@@ -65,12 +60,7 @@ int main(){
 					cout << "\n\n\t\tTrue bullets gone";
 				}else{
 					system("cls");
-					
-					//if(t == 0 && f == 0){
-						//showInfo(t, f, b);
-						//break;
-					//}
-					
+
 					if(b == true){
 						invertert(f, t, b);			
 					}else{
@@ -80,12 +70,7 @@ int main(){
 			}else if(c == 70 || c == 102){
 				if(f <= 0){
 					system("cls");
-					
-					//if(t == 0){
-						//showInfo(t, f, b);
-						//break;
-					//}	
-					
+
 					if(b == true){
 						inverterf(t, f, b);
 						showInfo(t, f, b);
@@ -96,11 +81,6 @@ int main(){
 					cout << "\n\n\t\tFalse bullets gone";
 				}else{
 					system("cls");
-					
-					//if(t == 0 && f == 0){
-						//showInfo(t, f, b);
-						//break;
-					//}	
 					
 					if(b == true){						
 						inverterf(t, f, b);
