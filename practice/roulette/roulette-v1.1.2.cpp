@@ -6,8 +6,7 @@ using namespace std;
 
 void percentages(const float& f, const float& t);
 void showInfo(const int& t, const int& f, const bool& b);
-int invertert(int& f, int& t, bool& b);
-int inverterf(int& t, int& f, bool& b);
+int invert(int& f, int& t, bool& b);
 
 int main(){
 	char ch;
@@ -51,7 +50,7 @@ int main(){
 					system("cls");
 
 					if(b == true){
-						invertert(f, t, b);
+						invert(f, t, b);
 						showInfo(t, f, b);
 						percentages(f, t);
 						continue;
@@ -62,7 +61,7 @@ int main(){
 					system("cls");
 
 					if(b == true){
-						invertert(f, t, b);			
+						invert(f, t, b);			
 					}else{
 						t -= 1;
 					}
@@ -72,7 +71,7 @@ int main(){
 					system("cls");
 
 					if(b == true){
-						inverterf(t, f, b);
+						invert(t, f, b);
 						showInfo(t, f, b);
 						percentages(f, t);
 						continue;
@@ -83,7 +82,7 @@ int main(){
 					system("cls");
 					
 					if(b == true){						
-						inverterf(t, f, b);
+						invert(t, f, b);
 					}else{					
 						f -= 1;
 					}					
@@ -125,7 +124,7 @@ void showInfo(const int& t, const int& f, const bool& b){
 	b == true ? cout << "\n\tINVERTER: ON" : cout << "\n\tINVERTER: OFF";
 }
 
-int invertert(int& f, int& t, bool& b){
+int invert(int& f, int& t, bool& b){
 	if(b == true && f == 0){
 		cout << "\n\n\t\tNot possible";
 		b = false;
@@ -135,16 +134,4 @@ int invertert(int& f, int& t, bool& b){
 		return f--;
 	}else
 		return t--;
-}
-
-int inverterf(int& t, int& f, bool& b){
-	if(b == true && t == 0){
-		cout << "\n\n\t\tNot possible";
-		b = false;
-		return t;
-	}else if(b == true){
-		b = false;
-		return t--;
-	}else
-		return f--;
 }
