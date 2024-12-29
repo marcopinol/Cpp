@@ -17,7 +17,7 @@ int main(){
 		system("cls");
 		int t, f;
 		
-		cout << "\n\t+-+-+-+-+ WELCOME TO ROULETTE BULLET COUNTER v1.1.2 +-+-+-+-+\n";
+		cout << "\n\t+-+-+-+-+ WELCOME TO ROULETTE BULLET COUNTER v1.1.3 +-+-+-+-+\n";
 		cout << "\t ,________________________________       \n";
 		cout << "\t|__________,----------._ [____]  \"\"-,__  __...-----===\n";
 		cout << "\t        (_(||||||||||||)___________/   ""               |\n";
