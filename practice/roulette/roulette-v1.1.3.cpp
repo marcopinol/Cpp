@@ -150,7 +150,7 @@ int check(){
 	    }else{
 	    	cout << "\n\t\tInvalid input. Please enter a non-negative number: ";
 			cin.clear();
-	    	cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
+	    	cin.ignore(numeric_limits<streamsize>::max(), '\n');
     	}	
    	}
 }
