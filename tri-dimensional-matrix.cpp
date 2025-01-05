@@ -6,6 +6,9 @@ int main(){
 	
 	int bid[3][2] = {{0, 1}, {2, 3}, {4, 5}};
 	
+	int unid[4] = {0, 1, 2, 3};
+	
+	cout << unid[2] << '\n';
 	cout << bid[2][1] << '\n';
 	cout << trid[0][1][1] << endl;
 	
