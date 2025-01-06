@@ -15,6 +15,5 @@ int main(){
 		cout << "Endereco do caractere: " << static_cast<const void*>(&nome[i]) << "\t\tChar: " << nome[i] 
 			<< "\t\tDec: " << (int)(nome[i]) << endl;
 	
-	
 	return 0;
 }
