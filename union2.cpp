@@ -6,7 +6,7 @@ static union {
 	char str[30];
 	int i;
 	float f;
-};
+}; //this is a variable
 
 enum DataType {StrType, IntType, FloatType} Tipo;
 
