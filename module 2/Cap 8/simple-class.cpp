@@ -21,8 +21,8 @@ int main(){
 	x.init(5, 3); //Calls the member function to initialize it
 	y.init(10, 6); //Same thing
 	
-	x.printData();
-	y.printData();
+	x.printData(); //Calls the member function to print the data
+	y.printData(); //Same thing
 	
 	system("PAUSE");
 	return 0;
