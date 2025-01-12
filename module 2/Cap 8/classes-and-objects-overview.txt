@@ -1,0 +1,15 @@
+Classes are declarations of new data types, which can contain data (data members) and functions (member functions / methods).
+
+An Object is an instantiated class, for example:
+
+(theorical example)
+
+class Person{
+
+	 float height; --> data (data member)
+	 int age; --> data (data member)
+
+	 void talk(){...} --> method (function member)
+}
+
+Person p --> this is an object (a instantiated class)
