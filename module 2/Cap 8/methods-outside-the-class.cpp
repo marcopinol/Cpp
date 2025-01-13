@@ -35,7 +35,7 @@ void Data::initData(int d, int m, int a){ //The "::" is a scope resolution opera
 
 void Data::printData(){
 	char nome[13][10] = {{'z', 'e', 'r', 'o'}, {"Janeiro"}, "Fevereiro", "Abril", "Março", "Maio", "Junho", "Julho", "Agosto",
-						 "Outubro", "Novembro", "Dezembro"};
+						 "Setembro", "Outubro", "Novembro", "Dezembro"};
 	cout << dia << " de " << nome[mes] << " de " << ano << endl;
 }
 

@@ -8,24 +8,42 @@ class Data{
 			return (ano % 4 == 0 && (ano % 100 || ano % 400));
 		}
 	public:
-		Data(); //default constructor; prototype
+		Data(): dia(1), mes(1), ano(1) //Default constructor; inline
+		{}
+		Data(int d, int m, int a); //Constructor with arguments; overloading constructor
 		void initData(int d, int m, int a); //initialize data
 		void printData();
 		void printSigno();
 		void printBissexto();
 };
 
-Data::Data(): dia(1), mes(1), ano(1){
+Data::Data(int d, int m, int a){
+	initData(d, m ,a);
 }
 
 int main(){
-	Data x;
+	Data x(5, 5, 2003);
+	int d, m, a;
+	
+	cout << "Digite dia mes ano: ";
+	cin >> d >> m >> a;
+	
+	Data z(d, m, a);
 	
 	//x.initData(5, 5, 2003);
 	x.printData();
 	x.printSigno();
 	x.printBissexto();
 	
+	cout << endl;
+	
+	z.printData();
+	z.printSigno();
+	z.printBissexto();
+	
+	cout << endl;
+	
+	system("PAUSE");
 	return 0;
 }
 
