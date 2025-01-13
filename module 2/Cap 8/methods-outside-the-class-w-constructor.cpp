@@ -4,20 +4,24 @@ using namespace std;
 class Data{
 	private:
 		int dia, mes, ano;
+		int bissexto(){ //inline function
+			return (ano % 4 == 0 && (ano % 100 || ano % 400));
+		}
 	public:
+		Data(); //default constructor; prototype
 		void initData(int d, int m, int a); //initialize data
 		void printData();
 		void printSigno();
 		void printBissexto();
-		int bissexto(){ //inline function
-			return (ano % 4 == 0 && (ano % 100 || ano % 400));
-		}
 };
+
+Data::Data(): dia(1), mes(1), ano(1){
+}
 
 int main(){
 	Data x;
 	
-	x.initData(5, 5, 2003);
+	//x.initData(5, 5, 2003);
 	x.printData();
 	x.printSigno();
 	x.printBissexto();
