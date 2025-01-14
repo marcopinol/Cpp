@@ -3,7 +3,7 @@ using namespace std;
 
 class Rec{
 	private:
-		static int n;
+		static int n; //an unique item for all objects
 	public:
 		Rec(){ //Default constructor
 			n++;
