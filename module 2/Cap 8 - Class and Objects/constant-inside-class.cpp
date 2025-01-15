@@ -1,11 +1,11 @@
 #include <iostream>
 #include <cstring>
-
-#define MAX 80
 using namespace std;
 
 class String{
 	private:
+		//enum {MAX=80}; //This is an way to declare consts inside classes in older C++ compilers
+		static const int MAX = 80; //More modern way; Only int constants are allowed inside classes
 		char str[MAX];
 	public:
 		String(){ //Default constructor
@@ -24,6 +24,8 @@ class String{
 			cout << str << endl;
 		}
 };
+
+const int String::MAX; //Const definition
 
 int main(){
 	String S1('=', 22), S2("Feliz Ano Novo! ");
