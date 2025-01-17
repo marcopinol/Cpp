@@ -4,8 +4,6 @@ using namespace std;
 
 class Mes{
 	private:
-		/*enum Nome {Janeiro = 1, Fevereiro, Abril, Marco, Maio, Junho, Julho, Agosto, Setembro, Outubro, 
-					Novembro, Dezembro} nome; */
 		char nomemes[10];
 		char abvr[4];
 		int dias;
