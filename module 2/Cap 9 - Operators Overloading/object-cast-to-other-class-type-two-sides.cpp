@@ -1,4 +1,5 @@
 //Making both conversions
+//They must be on the same class
 #include <iostream>
 #include <iomanip>
 using namespace std;
