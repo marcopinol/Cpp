@@ -35,7 +35,7 @@ class Graus{
 		Graus(double x): g(x) //One arg constructor
 		{}
 		
-		Graus(Radianos R); //Constructor that casts Graus to Radianos
+		Graus(Radianos R); //Constructor that casts Radianos to Graus
 		
 		void printG(){
 			cout << setiosflags(ios::fixed) << setiosflags(ios::showpoint) << setprecision(2) << g << "\xF8" << endl;
