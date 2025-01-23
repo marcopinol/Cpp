@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-class Conta{
+class Conta{ //Abstract class
 	private:
 		static const int TAM = 80; //Name max size
 		char Nome[TAM]; //Customer name
