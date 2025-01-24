@@ -21,10 +21,10 @@ class Z : public Y, public X
 
 int main(){
 	Z obj;
-	//obj.Print(); Compilation error
+	//obj.Print(); Compilation error (Which Print()?)
 	
-	obj.X::Print();
-	obj.Y::Print();
+	obj.X::Print(); //:: operator solves the problem with scope
+	obj.Y::Print(); //:: operator solves the problem with scope
 	
 	system("PAUSE");
 	return 0;
