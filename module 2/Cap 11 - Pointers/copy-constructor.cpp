@@ -33,6 +33,16 @@ class String{
 		void PrintS(int n){
 			cout << str + n << endl;
 		}
+
+		String& operator =(const String& s){
+			if(&s == this)
+				return *this;
+			int tamanho = strlen(s.str);
+			delete[] str;
+			str = new char[tamanho + 1];
+			strcpy(str, s.str);
+			return *this;
+		}
 };
 
 int main(){
