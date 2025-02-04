@@ -38,10 +38,10 @@ int main(){
 	B = new Venda[1];
 	
 	A.GetVenda();
-	B->GetVenda();
+	B->GetVenda(); //Acessing object method/member via pointer
 	
 	A.PrintVenda();
-	B->PrintVenda();
+	B->PrintVenda(); //Acessing object method/member via pointer
 	
 	system("PAUSE");
 	return 0;
