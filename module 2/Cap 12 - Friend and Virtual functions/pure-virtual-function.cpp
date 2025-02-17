@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Base{
+class Base{ //abstract class
 	private:
 		int x;
 	public:
@@ -36,7 +36,7 @@ int main(){
 	*(p + 0) = &d0;
 	*(p + 1) = &d1;
 	
-	for(int i = 0; i < 3; i++){
+	for(int i = 0; i < 2; i++){
 		p[i]->Print();
 	}
 	
